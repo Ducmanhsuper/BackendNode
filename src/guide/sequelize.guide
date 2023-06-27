@@ -5,7 +5,7 @@ Sequelize là một package hỗ trợ sử dụng ORM với môi trường Node
 npm install --save-dev sequelize-cli@6.2.0
 npm install --save mysql2@2.2.5
 npm install --save sequelize@6.6.2
-
+chạy lệnh npx sequelize-cli init
 👉 2. Thêm file .sequelizerc tại thư mục root
 Nội dung file .sequelizerc
 const path = require('path');
@@ -25,3 +25,4 @@ npx sequelize-cli model:generate --name User --attributes firstName:string,lastN
 npx sequelize-cli db:migrate
 
 👉5. Tạo Seeder: npx sequelize-cli seed:generate --name demo-user
+      Add Seeder: npx sequelize-cli db:seed:all
